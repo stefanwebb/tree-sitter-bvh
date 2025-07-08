@@ -1,0 +1,40 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "bvh",
+      "camelcase": "bvh",
+      "title": "Biovision Hierarchy",
+      "scope": "source.bvh",
+      "file-types": [
+        ".bvh"
+      ],
+      "injection-regex": "^bvh$",
+      "class-name": "TreeSitterBvh"
+    }
+  ],
+  "metadata": {
+    "version": "0.0.1",
+    "license": "CC BY-SA 4.0",
+    "description": "Bvh grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "Stefan Webb",
+        "email": "info@stefanwebb.me",
+        "url": "https://www.linkedin.com/in/stefan-webb"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/stefanwebb/tree-sitter-bvh"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
